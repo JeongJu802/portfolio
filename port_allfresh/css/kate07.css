@@ -1,0 +1,200 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/* 공통 */
+html {font-size: 0.625rem;}
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 1.6rem; color: rgba(0,0,0,0.8);}
+.inner {width: 1200px; margin: 0 auto;}
+h2 {font-family: 'Arita-buri-SemiBold', sans-serif;}
+section, footer {position: relative; width: 100%; height: auto; background: #fff; z-index: 5; box-sizing: border-box;}
+.btnNext {display: inline-block; position: relative; font-family: 'Arita-buri-SemiBold', sans-serif; font-size: 14px; padding: 13px 15px; color: rgb(0, 0, 0, 0.5); letter-spacing: 2px; transition: all 0.5s;}
+.btnNext:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: #000; opacity: 0.5; transition: all 0.5s;}
+.btnNext:after {content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #000; opacity: 0.5; transition: all 0.5s;}
+.btnNext:hover {color: #ff9900; letter-spacing: 3px;}
+.btnNext:hover:before {opacity: 0;}
+.btnNext:hover:after {opacity: 0;}
+
+/* 스크롤바 */
+body::-webkit-scrollbar {width: 6px; background: #fff;}
+body::-webkit-scrollbar-thumb {background: #c5c5c5}
+body::-webkit-scrollbar-track {background: #888}
+
+/* swiper customizing */
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {display: none;}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {display: none;}
+.swiper-button {width: 50px; height: 50px; opacity: 1; transition: all 0.5s;}
+.swiper-button img {width: 50px; height: 50px; border-radius: 2px; opacity: 0.8; transition: all 0.3s;}
+.swiper-button img:hover {opacity: 1;}
+
+/* popup */
+.popupEvent {position: fixed; top: 0; left: 0; width: 100%; height: 50px; background: #000; overflow: hidden; z-index: 10; transition: all 0.5s;}
+.popupEvent.shrink {height: 0; opacity: 0;}
+.popupEvent a {position: absolute; top: 10px; left: 50%; transform: translateX(-50%);}
+
+/* quickMenu */
+.quickMenu {position: fixed; bottom: 120px; right: -60px; background: #fff; z-index: 10; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.12); transition: all 0.5s;}
+.quickMenu.shrink {right: 10px;}
+.quickMenu li:nth-child(1) {width: 40px; height: 40px; text-align: center; line-height: 40px; background: #19ce60; border-radius: 50%; margin: 10px 10px 25px;}
+.quickMenu li:nth-child(n+2) {width: 50px; height: 50px; text-align: center; line-height: 50px; margin: 5px 5px 15px; border-radius: 4px; transition: all 0.3s;}
+.quickMenu li:nth-child(n+2):hover {background: #a27b73; border-radius: 50%; box-shadow: 0 10px 10px rgba(0,0,0,0.2);}
+.quickMenu li:nth-child(n+2):hover a {color: #fff;}
+.quickMenu li:nth-child(5) {margin: 4px;}
+.quickMenu li a {font-size: 24px; color: #a27b73;}
+.quickMenu li:nth-child(1) a {font-size: 20px; color: #fff;}
+.quickMenu li:nth-child(4) a {color: #ff9900;}
+
+/* header */
+header {position: fixed; top: 50px; left: 0; width: 100%; height: auto; background: rgba(74, 41, 34, 0.8); z-index: 10; transition: all 0.5s;}
+header.shrink {top: 0;}
+header .inner {position: relative; height: 90px; transition: all 0.5s;}
+header .inner.shrink {height: 60px;}
+header .logo {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+header .logo img {height: 30px;}
+header .topHeader {position: absolute; top: 0; right: 0;  height: 40px; line-height: 40px; transition: all 0.5s;}
+header .topHeader.shrink {top: -40px;}
+header .topHeader .navUtil {display: flex;}
+header .topHeader .navUtil li {font-size: 1.2rem; font-weight: 300; padding-left: 20px; color: rgba(255,255,255,0.7); transition: all 0.3s;}
+header .topHeader .navUtil li:hover {color: #ff9900;}
+header .topHeader .navUtil li:last-child {color: #fff;}
+header .botHeader {position: absolute; bottom: 0; right: 0; display: flex; height: 50px; line-height: 50px;}
+header .botHeader .navCate {display: flex; font-family: 'Arita-buri-SemiBold', sans-serif; font-weight: 500; padding-right: 15px;}
+header .botHeader .navCate > li {position: relative; padding: 0 15px;}
+header .botHeader .navCate > li > a {position: relative; display: block; color: rgba(255,255,255,0.9);}
+header .botHeader .navCate > li > a:hover {color: #ff9900; transition: all 0.2s;}
+header .botHeader .navCate > li > a.on {color: #ff7e8f;}
+header .botHeader .navCate > li > a:after {content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: #ff7e8f; transition: all 0.2s;}
+header .botHeader .navCate > li > a:hover:after {width: 100%;}
+header .botHeader .navCate > li > a.on:after {width: 100%;}
+header .botHeader .navCate > li:last-child > a {color: #ff9daa;}
+header .botHeader .navInfo {position: relative; font-size: 2.4rem; font-weight: 300; color: rgba(255,255,255,0.7); padding-left: 5px;}
+header .botHeader .navInfo:before {content: ''; position: absolute; top: 10px; left: 0; width: 1px; height: 25px; background: rgba(255,255,255,0.2);;}
+header .botHeader .navInfo a {padding-left: 20px;}
+
+/* depth2 */
+header .botHeader .depth2 {display: none; position: absolute; top: 50px; width: 430px; padding: 15px; box-sizing: border-box; background: #fff; border: 1px solid rgba(0,0,0,0.1);}
+header .botHeader li:nth-child(-n+4) .depth2 {left: 0;}
+header .botHeader li:nth-child(n+5) .depth2 {right: 0;}
+header .botHeader .depth2 ul li {line-height: 1.6; font-size: 1.4rem; color: rgb(0, 0, 0, 0.7); width: 145px; padding: 4px 0; border-bottom: 1px solid rgba(0,0,0,0.1); box-sizing: border-box; transition: all 0.2s;}
+header .botHeader .depth2 ul li:hover {padding-left: 2px; color: rgba(0,0,0,0.4);}
+header .botHeader .depth2 ul {float: left;}
+header .botHeader .depth2 img {float: right;}
+header .botHeader li:nth-child(n+5) .depth2 ul {float: right;}
+header .botHeader li:nth-child(n+5) .depth2 ul li {text-align: right;}
+header .botHeader li:nth-child(n+5) .depth2 img {float: left;}
+
+#mainVisual {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: url(../img/kate07_bg02.jpg) center/cover fixed; z-index: 6;}
+#mainVisual .inner {text-align: center; width: 100%; height: 100vh; padding-top: 250px; box-sizing: border-box; opacity: 1; transform: matrix(1,0,0,1,0,0); transition: all 1.3s;}
+#mainVisual .inner.shrink {opacity: 0; transform: matrix(1,0,0,1,0,-300);}
+#mainVisual img {margin-bottom: 20px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.6s}
+#mainVisual img.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0); transition-delay: 0.8s;}
+#mainVisual h2 {font-size: 72px; line-height: 1; letter-spacing: 4px; margin-bottom: 30px; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.1); opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#mainVisual h2.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0); transition-delay: 0.4s;}
+#mainVisual h3 {font-size: 36px; margin-bottom: 40px; font-family: 'Arita-buri-SemiBold', sans-serif; color: rgba(255,255,255,0.9); text-shadow: 0 0 10px rgba(0,0,0,0.1); opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#mainVisual h3.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#mainVisual .desc {color: rgba(255,255,255,0.8); opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#mainVisual .desc.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0); transition-delay: 0.8s;}
+#mainVisual a {position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: #fff; padding: 40px 10px 0;}
+#mainVisual a {position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: #fff; padding: 40px 10px 0;}
+#mainVisual a:before {content: ''; position: absolute; top: 0px; left: 50%; transform: translateX(-50%); width: 1px; height: 50px; background: #fff;}
+
+#container > div {padding-top: 100px; background: url(../img/kate07_bg01.jpg) center;}
+#container h2,
+#container h3,
+#container .title {font-family: 'Arita-buri-SemiBold', sans-serif;}
+#container h2 {font-size: 72px; line-height: 1; letter-spacing: 4px; color: #fff;}
+#container h3 {font-size: 36px; color: rgba(255,255,255,0.9);}
+#container .title {font-size: 20px; color: rgba(255,255,255,0.9);}
+#container .desc {font-size: 14px; color: rgba(255,255,255,0.6); line-height: 2;}
+#container .contBg {width: 100%; height: 100vh;}
+#container .cont01 {padding: 250px 0 0; text-align: center;}
+#container .cont01 img {margin-bottom: 20px; opacity: 0; transition: all 1.3s;}
+#container .cont01 img.shrink {opacity: 1;}
+#container .cont01 h3 {position: relative; margin-bottom: 100px; opacity: 0; transition: all 1.3s;}
+#container .cont01 h3.shrink {opacity: 1;}
+#container .cont01 h3:before {content: ''; position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); width: 0px; height: 1px; background: #fff; transition: all 1.3s;}
+#container .cont01 h3.shrink:before {width: 250px;}
+#container .cont01 .title {margin-bottom: 20px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont01 .title.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont01 .desc {opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont01 .desc.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+
+#container .cont02 {padding-top: 100px;}
+#container .cont02 .fl {width: 400px; margin-top: 100px;}
+#container .cont02 .fl h3 {margin-bottom: 40px; opacity: 0; transition: all 1.3s;}
+#container .cont02 .fl h3.shrink {opacity: 1;}
+#container .cont02 .fl .desc {margin-bottom: 40px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont02 .fl .desc.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont02 .fl figure {opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont02 .fl figure.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont02 .fr {opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont02 .fr.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+
+#container .cont03 {text-align: center;}
+#container .cont03 h3 {margin-bottom: 10px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont03 h3.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont03 .desc {margin-bottom: 15px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont03 .desc.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont03 .inner {position: relative; top: -500px; width: 1000px; height: 500px; margin: 0 auto;}
+#container .cont03 .swiper {height: 500px; overflow: hidden; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont03 .swiper.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont03 .slideNav {width: 700px; margin: 0 auto 40px; border-top: 1px solid rgb(255, 255, 255, 0.3); box-sizing: border-box; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont03 .slideNav.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont03 .slideNav a {display: inline-block; position: relative; height: 50px; line-height: 50px; margin: 0 20px; color: rgb(255, 255, 255, 0.4); font-family: 'Arita-buri-SemiBold', sans-serif; transition: all 0.3s;}
+#container .cont03 .slideNav a:before {content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 0%; height: 3px; background: #dd5808; transition: all 0.3s;}
+#container .cont03 .slideNav a:hover {color: rgb(255, 255, 255, 0.9);}
+#container .cont03 .slideNav a:hover:before {width: 100%;}
+#container .cont03 .slideNav a.on {color: rgb(255, 255, 255, 0.9); transition-delay: 0.8s;}
+#container .cont03 .slideNav a.on:before {width: 100%; transition-delay: 0.8s;}
+#container .cont03 .swiper-slide {width: 1000px; height: 500px; background: no-repeat center/cover; opacity: 0.1; transition: all 0.8s;}
+#container .cont03 .swiper-slide:nth-child(1) {background-image: url(../img/kate07_img03.jpg);}
+#container .cont03 .swiper-slide:nth-child(2) {background-image: url(../img/kate07_img04.jpg);}
+#container .cont03 .swiper-slide:nth-child(3) {background-image: url(../img/kate07_img05.jpg);}
+#container .cont03 .swiper-slide:nth-child(4) {background-image: url(../img/kate07_img06.jpg);}
+#container .cont03 .swiper-slide.on {opacity: 1;}
+#container .cont03 .textGroup {display: none; width: 500px; height: 300px; margin: 100px auto; padding-top: 70px; box-sizing: border-box; background: rgb(255, 255, 255, 0.9); font-family: 'Arita-buri-SemiBold', sans-serif;}
+#container .cont03 .textGroup img {width: auto; height: 50px; margin-bottom: 15px;}
+#container .cont03 .textGroup .desc {font-size: 18px; color: rgb(0, 0, 0, 0.6); line-height: 1.4; margin-bottom: 10px;}
+#container .cont03 .textGroup .title {font-size: 24px; color: rgb(0, 0, 0, 0.8);}
+
+#container .cont04 {position: relative; height: 750px;}
+#container .cont04 div {margin-top: 150px;}
+#container .cont04 div h3 {margin-bottom: 40px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont04 div h3.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont04 div .desc {margin-bottom: 40px; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont04 div .desc.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont04 div .btnNext {color: rgb(255, 255, 255, 0.8); opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont04 div .btnNext.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+#container .cont04 div .btnNext:before {background: #fff;}
+#container .cont04 div .btnNext:after {background: #fff;}
+#container .cont04 figure {position: absolute; top: 150px; right: 0; width: 930px; height: 576px; overflow: hidden; opacity: 0; transform: matrix(1,0,0,1,0,50); transition: all 1.3s;}
+#container .cont04 figure.shrink {opacity: 1; transform: matrix(1,0,0,1,0,0);}
+
+#banner .bannerArea {padding: 40px 0;}
+#banner .bannerArea > div {width: calc(100%/2 - 25px);}
+#banner .bannerArea > div img {width: 100%; height: auto; transition: all 0.3s;}
+#banner .bannerArea > div img:hover {opacity: 0.8;}
+#banner .bannerArea .fl {margin-top: 120px;}
+#banner .bannerArea .fr {margin-top: 40px;}
+#banner .bannerArea .fr img:first-child {margin-bottom: 50px;}
+
+#info > div {text-align: center; padding: 80px 0; border-top: 1px solid #eee;}
+#info h2 {font-size: 24px; margin-bottom: 14px;;}
+#info .desc {color: rgba(0,0,0,0.6);}
+#info a {margin: 24px 10px 0;}
+#info .botArea .floatArea > div {width: 50%; box-sizing: border-box;}
+#info .botArea .floatArea .fl {border-right: 1px solid #eee;}
+#info .botArea h2 {color: #5f3612;}
+#info .botArea .call {color: #5f3612; margin-bottom: 14px;}
+#info .botArea .desc {font-size: 14px; margin-bottom: 8px; line-height: 1.6;}
+#info .botArea .btnNext {margin: 24px 10px 0;}
+#info .infoNav {padding-top: 80px; text-align: left;}
+#info .infoNav .depth1 {display: flex; justify-content: space-between;}
+#info .infoNav .depth1 > li > a {display: block; font-weight: 500; margin-bottom: 20px;}
+#info .infoNav .depth2 > li {font-size: 13px; color: rgb(0, 0, 0, 0.5); margin-bottom: 10px; transition: all 0.1s;}
+#info .infoNav .depth2 > li:hover {color: #ff9900;}
+
+footer {text-align: center; padding: 80px 0; border-top: 1px solid #eee; padding: 60px 0;}
+footer img {margin-bottom: 24px;}
+footer p {font-size: 13px; color: rgba(0,0,0,0.6); margin-bottom: 10px;}
+footer a {display: inline-block; font-size: 12px; color: rgba(0,0,0,0.6); margin: 10px 10px;}
+footer:after {content: ''; position: absolute; bottom: 10px; right: 40px; width: 60px; height: 60px; background: url(../img/kcp.png) no-repeat center/cover;}

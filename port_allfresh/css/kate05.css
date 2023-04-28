@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+#mainVisual {background: url(../img/sub-bg5.jpg) no-repeat center/cover;}
+#container .tab04 {display: none; padding: 40px; border: 1px solid #ddd; box-sizing: border-box; text-align: center;}
+#container .tab04 img {width: 70px; height: auto; margin-bottom: 20px;}
+#container .tab04 p {color: rgba(0,0,0,0.4);}
+#container .soldOut figure {position: relative;}
+#container .soldOut figure:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/sold_out.png) no-repeat center/cover;}
