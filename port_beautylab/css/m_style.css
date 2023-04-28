@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+.inner {width: 94%;}
+h2 {font-size: 2rem; color: rgba(0,0,0,0.8);}
+.text {margin-top: 0;}
+
+/* header */
+header .inner {height: 60px;}
+header .logo {height: 60px;}
+header .logo a {width: 100px; height: 15px;}
+header .util {line-height: 65px;}
+header .util a {width: 20px; height: 20px;}
+header .gnb {top: 300px;}
+header .gnb ul li a {font-size: 1.4rem;}
+
+/* main_visual */
+#main_visual {background-image: url(../img/m_main_bg.png);}
+#main_visual .inner {position: relative; height: 300px;}
+#main_visual .title_group .desc {font-size: 1.6rem; margin-top: 0px; line-height: 1;}
+#main_visual .title_group strong {font-size: 1.6rem; font-weight: 500; color: rgba(0,0,0,0.5);}
+#main_visual .title_group .title {font-size: 2rem; margin-top: 0px; line-height: 1.2;}
+#main_visual .title_group .title > span {display: block; margin-top: 10px;}
+
+/* product */
+#product {padding: 120px 0 60px;}
+#product .product_list {margin: 30px 0 0 -30px;}
+#product .product_list li {width: calc(100%/2 - 30px); margin: 0 0 0 30px;}
+#product .product_list li:nth-child(-n+2) {margin-bottom: 60px;}
+#product .product_list .brand {font-size: 1rem; margin-top: 5px;}
+#product .product_list .desc {height: 40px;}
+#product .product_list .desc,
+#product .product_list .price {font-size: 1.3rem; margin-top: 5px; font-weight: 500; height: 40px;}
+
+/* banner */
+/* banner 공통 */
+#banner .inner {width: 100%;}
+#banner .banner_area {margin-left: 0;}
+#banner .banner_area > div {float: left; width: calc(100%/2); margin-left: 0;}
+#banner .banner_area a {display: block; width: 100%; height: 100%;}
+#banner .title_group {position: absolute;}
+#banner .title_group .s_text {font-size: 1.2rem; color: rgba(255,255,255,0.8);}
+#banner .title_group .b_text {font-size: 1.6rem;}
+
+#banner .left_banner {height: 250px;}
+#banner .left_banner .title_group span {display: inline;}
+#banner .right_banner li {height: 125px;}
+#banner .right_banner li .title_group {top: 50%; transform: translateY(-50%);}
+#banner .right_banner li.bot_banner {margin-top: 0;}

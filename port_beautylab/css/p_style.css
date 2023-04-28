@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+.inner {width: 1290px;}
+h2 {position: relative;}
+h2:after {content: ''; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: rgba(0,0,0,0.15);}
+
+/* header */
+header .inner {display: flex; align-items: center; justify-content:space-between;}
+header .gnb li {margin: 0 20px;}
+
+/* main_visual */
+#main_visual .title_group > span {display: inline-block; padding: 2px 12px; border: 1px solid rgba(0,0,0,0.6);}
+
+/* product */
+#product .product_list {margin: 60px 0 0 -30px;}
+#product .product_list li {width: calc(100%/4 - 30px); margin-left: 30px;}
+
+/* footer */
+footer .footer_area {position: relative; height: 220px;}
+footer .footer_area .left_area {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+footer .footer_area .left_area .f_gnb li {margin: 40px 20px 0 0;}
+footer .footer_area .right_area {position: absolute; top: 50%; right: 0; transform: translateY(-50%); color: rgba(0,0,0,0.4);}
+footer .footer_area .right_area {text-align: right;}
