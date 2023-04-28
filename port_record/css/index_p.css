@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/* common */
+html {font-size: 0.625rem;}
+body {font-size: 1.5rem; font-family: 'Noto Sans KR', sans-serif; color: rgba(0,0,0,0.8); background: #f5f5f5;}
+.inner {width: 1100px; margin: 0 auto;}
+h2 {font-size: 3.2rem; font-weight: 500; text-align: center; margin-bottom: 40px;}
+main section {padding: 100px 0;}
+img {display: block; width: 100%; height: 100%;}
+.tag {display: inline-block; padding: 2px 8px; margin-right: 10px; background: #f5f5f5; font-size: 1.4rem;  font-weight: 500; color: rgba(0,0,0,0.4)}
+
+/* header */
+header {position: absolute; top: 0; left: 0; width: 100%; height: 150px; z-index: 10;}
+header .inner {position: relative; height: 100%;}
+header .logo {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+header .logo a {display: block; width: 80px; height: 30px; background: url(../img/logo_img01.png) no-repeat left center/contain;}
+header li a {position: relative; display: block; font-size: 1.7rem; font-weight: 500; color: rgba(255,255,255,0.8); transition: all 0.2s;}
+header .gnb {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+header .gnb li {float: left; margin: 0 20px;}
+header .gnb li:first-child a {color: rgba(0,0,0,0.6);}
+header .gnb li:first-child a:before {background: #000;}
+header .util {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+header .util li {float: left; margin: 0 8px;}
+header .util li a {font-size: 1.4rem;}
+header .util img {display: block; height: 21px;}
+header .btn_menu a {display: none;}
+/* UI 사용성 */
+header li a:before {content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: #fff; transition: all 0.2s;}
+header li a:hover {color: #fff;}
+header li a:hover:before {width: 100%;}
+header .gnb li:first-child a:hover {color: #000;}
+header .gnb li:first-child a:hover:before {background: #000;}
+
+/* m_menu */
+.m_menu_bg {display: none;}
+.m_menu {display: none;}
+
+/* main_visual */
+#main_visual {position: relative; top: -830px; width: 100%; height: 830px; background: url(../img/pc_main_img.png) no-repeat top center/cover;}
+#main_visual .inner {position: relative; height: 100%;}
+#main_visual .title_group {position: absolute; bottom: 20%; left: 0;}
+#main_visual .title_group p {font-weight: 700;}
+#main_visual .title_group .s_title {font-size: 6rem;}
+#main_visual .title_group .m_title {font-size: 8rem;}
+#main_visual .title_group .b_title {font-size: 10rem;}
+
+/* best */
+#best .inner {position: relative; height: auto;}
+#best .best_list {width: 900px; margin: 0 auto; padding-bottom: 60px;}
+#best .best_list figure {float: left; width: 600px;}
+#best .best_list figure img {display: block;}
+#best .best_list .desc_group {float: left; width: 230px; margin-left: 20px; }
+#best .best_list .desc_group .title {font-size: 2.2rem; font-weight: 500;}
+#best .best_list .desc_group span {display: block; font-size: 1.8rem; font-weight: 500; color: rgba(0,0,0,0.6); margin-top: 10px;}
+#best .best_list .desc_group .desc {margin-top: 30px;}
+#best .best_list .desc_group .desc li {line-height: 50px; color: rgba(0,0,0,0.6);}
+#best .btn_plus {position: absolute; top: 12px; right: 30px;}
+#best .btn_plus img {width: 21px; opacity: 0.4;}
+.best_view {position: absolute; text-align: center; --swiper-theme-color: #555}
+/* swiper */
+
+/* banner */
+#banner {padding: 0;}
+#banner figure {height: 800px; background: url(../img/sect02_img.png) no-repeat center/cover;}
+
+/* kpop */
+#kpop .inner {position: relative; width: 1000px;}
+#kpop .kpop_list {margin-left: -120px;}
+#kpop .kpop_list li {float: left; width: calc(100%/3 - 120px); margin-left: 120px; box-shadow: 10px 10px 10px rgba(0,0,0,0.05);}
+#kpop .kpop_list li:nth-child(-n+3) {margin-bottom: 80px;}
+#kpop .kpop_list li a {display: block; padding: 20px; box-sizing: border-box; background: #fff;}
+#kpop .kpop_list li figure {position: relative; right: 0; transition: all 0.5s;}
+#kpop .kpop_list li figure img {display: block;}
+#kpop .kpop_list li .desc_group {padding: 15px 0 0;}
+#kpop .kpop_list li .desc_group .title {font-size: 2rem; font-weight: 500; color: rgba(0,0,0,0.6); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+#kpop .kpop_list li .desc_group span {display: block; font-weight: 500; color: rgba(0,0,0,0.4); margin-bottom: 20px;}
+#kpop .btn_plus {position: absolute; top: 14px; right: 0;}
+#kpop .btn_plus img {width: 21px; opacity: 0.4;}
+/* UI 사용성 */
+#kpop .kpop_list li:hover figure {right: -25%;}
+#kpop .kpop_list li figure img:nth-child(1) {position: absolute; top: 0; left: 0; transition: all 0.5s;}
+#kpop .kpop_list li:hover figure img:nth-child(1) {left: -50%;}
+
+/* hot */
+.hot {background: #eee;}
+.hot .inner {position: relative;}
+.hot .hot_group .hot_list {height: 400px; border-radius: 0 400px 400px 0; background: #fff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 10px 10px 10px rgba(0,0,0,0.05);}
+.hot .hot_group .hot_list:nth-child(n+2) {margin-top: 40px;}
+.hot .hot_group .hot_list figure {position: relative; float: left; width: 400px; margin-left: 200px;}
+.hot .hot_group .hot_list figure img:nth-child(1) {position: absolute; top: 0; left: -200px; z-index: 1;}
+.hot .hot_group .hot_list .desc_group {float: left; padding: 40px 60px; box-sizing: border-box;}
+.hot .hot_group .hot_list .desc_group .title {font-size: 2.2rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.hot .hot_group .hot_list .desc_group span {display: block; font-size: 1.8rem; font-weight: 500; color: rgba(0,0,0,0.6); margin-top: 10px;}
+.hot .hot_group .hot_list .desc_group .desc {margin-top: 30px;}
+.hot .hot_group .hot_list .desc_group .desc {line-height: 30px; color: rgba(0,0,0,0.6);}
+.hot .btn_plus {position: absolute; top: 14px; right: 0;}
+.hot .btn_plus img {width: 21px; opacity: 0.4;}
+.hot .hot_group .hot_list .desc_group .tag {display: none;}
+/* UI 사용성 */
+.hot .hot_group .hot_list figure img:nth-child(2) {transform: rotate(0deg); transition: all 10s;}
+.hot .hot_group .hot_list:hover figure img:nth-child(2) {transform: rotate(1080deg); transition: all 15s;}
+
+.hot_mo {display: none;}
+
+/* footer */
+footer {height: 230px; background: #ccc; color: rgba(0,0,0,0.4); font-weight: 500; }
+footer .inner {display: flex; justify-content: space-between; align-items: center; padding: 40px 0; box-sizing: border-box;}
+footer .left_footer p {font-size: 1.6rem;}
+footer .left_footer span {display: block; font-size: 2rem; font-weight: 700; margin-top: 10px;}
+footer .left_footer address {font-size: 1.3rem; font-style: normal; margin-top: 10px;}/* 
+footer .gnb_footer .depth1 > li {float: left; text-align: center; font-size: 1.4rem; margin: 0 20px;}
+footer .gnb_footer .depth1 > li ul {margin-top: 10px;}
+footer .gnb_footer .depth2 li {font-size: 1.2rem; line-height: 1.8;} */
+footer .right_footer {text-align: right;}
+footer .right_footer figure a {display: inline-block; width: 30px; height: 30px; margin: 0 0 60px 10px; opacity: 0.4; transition: all 0.3s;}
+/* UI 사용성 */
+footer .gnb_footer li a {display: block; transition: all 0.2s;}
+footer .gnb_footer li a:hover {color: rgba(0,0,0,0.7);}
+footer .right_footer figure a:hover {opacity: 0.7;}

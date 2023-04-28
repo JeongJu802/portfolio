@@ -1,0 +1,49 @@
+@charset 'utf-8';
+@import url(fonts.css);
+
+/* common */
+.inner {width: 90%; margin: 0 5%;}
+.tag {font-size: 1.2rem;}
+
+/* header */
+header .logo a {width: 80px; height: 30px;}
+header .btn_menu a {width: 30px; height: 30px;}
+
+/* m_menu */
+.m_menu .top_menu .logo a {height: 35px;}
+.m_menu .top_menu .m_util li {margin-left: 30px;}
+.m_menu .top_menu .m_util li img {height: 30px;}
+.m_menu .m_gnb li a {font-size: 2rem;}
+.m_menu .m_login li {font-size: 1.5rem;}
+
+/* main_visual */
+#main_visual {background: url(../img/mo_main_img.png) no-repeat bottom center/cover;}
+#main_visual .title_group {display: none;}
+
+/* best */
+#best {padding-top: 40px;}
+#best .best_list {width: 80%;}
+#best .best_list .desc_group {margin: 20px 0 0 0;}
+#best .btn_plus {right: 10px;}
+
+/* kpop */
+#kpop .inner {width: 86%; margin: 0 7%;}
+#kpop .kpop_list {margin-left: -30px;}
+#kpop .kpop_list li {width: calc(100%/2 - 30px); margin-left: 30px;}
+#kpop .kpop_list li:nth-child(-n+4) {margin-bottom: 30px;}
+#kpop .kpop_list li a {padding: 10px;}
+#kpop .kpop_list li .desc_group .title {font-size: 1.6rem;}
+#kpop .kpop_list li .desc_group span {font-size: 1.4rem;}
+
+/* hot */
+.hot .hot_group .hot_list {width: 250px; height: 275px; border-radius: 0 90px 90px 90px; }
+.hot .hot_group .hot_list:nth-child(n+2) {margin-top: 40px;}
+.hot .hot_group .hot_list figure {width: 140px; margin-left: 70px;}
+.hot .hot_group .hot_list figure img:nth-child(1) {left: -70px;}
+.hot .hot_group .hot_list .desc_group {padding: 10px 0;}
+.hot .hot_group .hot_list .desc_group .title {font-size: 2rem;}
+.hot .hot_group .hot_list .desc_group span {font-size: 1.4rem; margin-top: 0px;}
+.hot .hot_group .hot_list .desc_group .tag {margin-top: 10px; font-size: 1.4rem;}
+
+/* footer */
+footer .right_footer .copy {font-size: 1.2rem;}

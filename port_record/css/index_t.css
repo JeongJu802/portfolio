@@ -1,0 +1,74 @@
+@charset 'utf-8';
+@import url(fonts.css);
+
+/* common */
+.inner {width: 90%; margin: 0 5%;}
+
+/* header */
+header .logo a {width: 100px; height: 50px;}
+header .gnb {display: none;;}
+header .util {display: none;}
+header .btn_menu {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+header .btn_menu a {display: block; width: 40px; height: 40px;}
+/* UI 사용성 */
+
+/* m_menu */
+.m_menu_bg {display: none; position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 90;}
+.m_menu {display: block; position: fixed; right: -100%; width: 100%; height: 100%; z-index: 100;}
+.m_menu .inner {position: absolute; top: 0; right: 0; width: 90%; height: 100%; margin: 0; padding: 0 7%; box-sizing: border-box; background: #f5f5f5; border-radius: 4px 0 0 4px;}
+.m_menu .top_menu {position: relative; height: 150px;}
+.m_menu .top_menu .logo {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.m_menu .top_menu .logo a {display: block; width: 100px; height: 40px; background: url(../img/logo_img01.png) no-repeat left center/contain;}
+.m_menu .top_menu .m_util {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.m_menu .top_menu .m_util li {float: left; margin-left: 40px;}
+.m_menu .top_menu .m_util li a {display: block;}
+.m_menu .top_menu .m_util li img {height: 35px; opacity: 0.6;}
+.m_menu .m_gnb {width: 100%; padding: 30px 0; border: solid #ddd; border-width: 1px 0; box-sizing: border-box; }
+.m_menu .m_gnb li a {display: block; font-size: 2.2rem; font-weight: 500; line-height: 100px; color: rgba(0,0,0,0.6);}
+.m_menu .m_login {margin-top: 50px;}
+.m_menu .m_login li {float: left; margin-right: 40px; font-size: 1.7rem; color: rgba(0,0,0,0.6);}
+.m_menu .m_login li:nth-child(3) {margin-right: 0px;}
+
+/* main_visual */
+#main_visual .title_group {bottom: 5%;}
+
+/* best */
+#best .best_list {width: 60%;}
+#best .best_list figure {float: none; width: 100%;}
+#best .best_list figure img {display: inline-block;}
+#best .best_list .desc_group {float: none; width: 100%; margin: 30px 0 0 0; text-align: center;}
+#best .best_list .desc_group .desc {display: none;}
+
+/* banner */
+#banner figure {height: 100vw; background: url(../img/mo_sect02_img.png) no-repeat top center/cover;}
+
+/* kpop */
+#kpop .inner {width: 90%; margin: 0 5%;}
+#kpop .kpop_list {margin-left: -60px;}
+#kpop .kpop_list li {width: calc(100%/3 - 60px); margin-left: 60px;}
+#kpop .kpop_list li:nth-child(-n+3) {margin-bottom: 60px;}
+
+/* hot */
+.hot .hot_group .hot_list {width: 490px; height: 490px; border-radius: 0 170px 170px 170px; padding: 20px; margin-bottom: 20px; box-sizing: border-box;}
+.hot .hot_group .hot_list figure {float: none; width: 300px; margin-left: 150px;}
+.hot .hot_group .hot_list figure img:nth-child(1) {left: -150px;}
+.hot .hot_group .hot_list .desc_group {float: none; width: 100%; padding: 15px 0; text-align: center;}
+.hot .hot_group .hot_list .desc_group .title {font-size: 2.8rem;}
+.hot .hot_group .hot_list .desc_group span {font-size: 2rem;}
+.hot .hot_group .hot_list .desc_group .desc {display: none;}
+.hot .hot_group .hot_list .desc_group .tag {display: inline-block; margin-top: 20px; font-size: 1.6rem;}
+.hot .btn_plus {position: absolute; top: 14px; right: 5%;}
+.hot .swiper-slide {flex-shrink: initial;}
+
+.hot.hot_mo {display: block;}
+.hot_pc {display: none;}
+
+/* footer */
+footer .inner {position: relative; display: block; padding: 40px 0; height: 100%;}
+footer .gnb_footer {display: none;}
+footer .right_footer figure {position: absolute; top: 40px; right: 0;}
+footer .right_footer .copy {position: absolute; bottom: 40px; right: 0; font-size: 1.2rem;}
+/* UI 사용성 */
+footer .gnb_footer li a {display: block; transition: all 0.2s;}
+footer .gnb_footer li a:hover {color: rgba(0,0,0,0.7);}
+footer .right_footer figure a:hover {opacity: 0.7;}

@@ -1,0 +1,77 @@
+@charset 'utf-8';
+@import url(fonts.css);
+
+/* common */
+html {font-size: 0.625rem;}
+body {font-size: 1.5rem; font-family: 'Noto Sans KR', sans-serif; color: rgba(0,0,0,0.8); background: #f5f5f5;}
+.inner {width: 1100px; margin: 0 auto;}
+img {display: block; width: 100%; height: 100%;}
+
+/* header */
+header {position: absolute; top: 0; left: 0; width: 100%; height: 150px; z-index: 10;}
+header .inner {position: relative; height: 100%;}
+header .logo {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+header .logo a {display: block; width: 80px; height: 30px; background: url(../img/logo_img01.png) no-repeat left center/contain;}
+header li a {position: relative; display: block; font-size: 1.7rem; font-weight: 500; color: rgba(255,255,255,0.8); transition: all 0.2s;}
+header .gnb {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+header .gnb li {float: left; margin: 0 20px;}
+header .gnb li:first-child a {color: rgba(0,0,0,0.7);}
+header .gnb li:first-child a:before {background: #000;}
+header .util {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+header .util li {float: left; margin: 0 8px;}
+header .util li a {display: block; font-size: 1.4rem;}
+header .util li:nth-child(n+4) a {position: relative; width: 21px; height: 21px;}
+header .util li:nth-child(n+4) a img {position: absolute; top: 0; left: 0;}
+header .util li:nth-child(n+4) a img.ico_brand {opacity: 0;}
+header .btn_menu a {display: none;}
+/* UI 사용성 */
+header .gnb li a.on {color: #000;}
+header li a:before {content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: #fff; transition: all 0.2s;}
+header li a:hover:before {width: 100%; background: #000;}
+header li a.on:before {content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 100%; height: 2px; background: #fff; transition: all 0.2s; background: #000;}
+
+/* m_menu */
+.m_menu_bg {display: none;}
+.m_menu {display: none;}
+
+/* main_visual */
+#main_visual {position: absolute; width: 100%; height: 830px; background: url(../img/pc_main_img.png) no-repeat top center/cover;}
+#main_visual .inner {position: relative; height: 100%;}
+#main_visual .title_group {position: absolute; bottom: 20%; left: 0;}
+#main_visual .title_group p {font-weight: 700;}
+#main_visual .title_group .s_title {font-size: 6rem;}
+#main_visual .title_group .m_title {font-size: 8rem;}
+#main_visual .title_group .b_title {font-size: 10rem;}
+
+/* brand_visual */
+.wrap {opacity: 0;}
+#brand .inner {position: relative; width: 900px; height: 1600px; box-shadow: 2px 2px 30px rgba(0,0,0,0.2); text-align: center; background: url(../img/paper.png) no-repeat center/cover; margin: 0 auto 100px;}
+#brand_visual {position: relative; width: 100%; height: 500px; overflow: hidden;}
+#brand_visual img {position: absolute; left: 50%; transform: translateX(-50%);}
+#brand_visual img.brand_p {bottom: -900px; width: 900px; height: 900px;}
+#brand_visual img.brand_t,
+#brand_visual img.brand_m {display: none;}
+#brand .inner > div {position: absolute;}
+#brand h2 {font-family: 'Oswald', sans-serif; font-size: 6rem; color: rgba(0,0,0,0.8);}
+#brand .title {color: rgba(0,0,0,0.3); margin-bottom: 20px; font-weight: 500;}
+#brand .desc {font-size: 1.8rem; font-weight: 500; line-height: 1.8; color: rgba(0,0,0,0.5); text-align: left; margin-bottom: 10px; text-align: center;}
+#brand .brand_group {top: 120px; right: 100px; width: 350px;}
+#brand .about_group {top: 620px; left: 50%; transform: translateX(-50%); width: 550px;}
+#brand .memory_group {bottom: 130px; left: 100px; width: 240px;}
+#brand .memory_group .desc {text-align: left; line-height: 1.6; }
+
+/* footer */
+footer {height: 230px; background: #ccc; color: rgba(0,0,0,0.4); font-weight: 500; }
+footer .inner {display: flex; justify-content: space-between; align-items: top; padding: 40px 0; box-sizing: border-box;}
+footer .left_footer p {font-size: 1.6rem;}
+footer .left_footer span {display: block; font-size: 2rem; font-weight: 700; margin-top: 10px;}
+footer .left_footer address {font-size: 1.3rem; font-style: normal; margin-top: 10px;}/* 
+footer .gnb_footer .depth1 > li {float: left; text-align: center; font-size: 1.4rem; margin: 0 20px;}
+footer .gnb_footer .depth1 > li ul {margin-top: 10px;}
+footer .gnb_footer .depth2 li {font-size: 1.2rem; line-height: 1.8;} */
+footer .right_footer {text-align: right;}
+footer .right_footer figure a {display: inline-block; width: 30px; height: 30px; margin: 0 0 60px 10px; opacity: 0.4; transition: all 0.3s;}
+/* UI 사용성 */
+footer .gnb_footer li a {display: block; transition: all 0.2s;}
+footer .gnb_footer li a:hover {color: rgba(0,0,0,0.7);}
+footer .right_footer figure a:hover {opacity: 0.7;}

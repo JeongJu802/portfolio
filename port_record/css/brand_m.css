@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import url(fonts.css);
+
+/* common */
+.inner {width: 90%; margin: 0 5%;}
+.tag {font-size: 1.2rem;}
+
+/* header */
+header .logo a {width: 80px; height: 30px;}
+header .btn_menu a {width: 30px; height: 30px;}
+
+/* m_menu */
+.m_menu .top_menu .logo a {height: 35px;}
+.m_menu .top_menu .m_util li {margin-left: 30px;}
+.m_menu .top_menu .m_util li img {height: 30px;}
+.m_menu .m_gnb li a {font-size: 2rem;}
+.m_menu .m_login li {font-size: 1.5rem;}
+
+/* main_visual */
+#main_visual {background: url(../img/mo_main_img.png) no-repeat bottom center/cover;}
+#main_visual .title_group {display: none;}
+
+/* brand_visual */
+#brand .inner {width: 100%;}
+#brand_visual img.brand_m {display: block; bottom: -600px; width: 600px; height: 600px;}
+#brand_visual img.brand_p,
+#brand_visual img.brand_t {display: none;}
+#brand h2 {font-size: 5rem;}
+#brand .title {font-size: 1.2rem; color: rgba(0,0,0,0.3); margin-bottom: 20px; font-weight: 500;}
+#brand .desc {font-size: 1.4rem;}
+#brand .brand_group {right: 40px; width: 270px;}
+#brand .about_group {left: 50%; transform: translateX(-50%); width: 80%; word-break: keep-all;}
+#brand .memory_group {left: 40px; width: 210px;}
+
+/* footer */
+footer .right_footer .copy {font-size: 1.2rem;}

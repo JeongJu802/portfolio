@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TENBYTEN Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/login_style.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <section class="sec_login">
+            <div class="login_box">
+                <figure>
+                    <a href="index.html"><img src="img/logo_img01.png" alt="텐바이텐 로고"></a>
+                </figure>
+                <form class="login_group">
+                    <ul>
+                        <li>
+                            <label for="user_id">
+                                <input type="text" id="user_id" placeholder="아이디" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="user_pw">
+                                <input type="password" id="user_pw" placeholder="비밀번호" required>
+                            </label>
+                        </li>
+                        <div class="float_group clear">
+                            <li class="fl">
+                                <input type="checkbox" id="chk_auto_id">
+                                <label for="chk_auto_id">아이디 저장</label>
+                            </li>
+                            <li class="fr">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#">비밀번호 찾기</a>
+                            </li>
+                        </div>
+                        <li>
+                            <button type="submit" class="login_btn">로그인</button>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="join_btn">회원가입</button></a>
+                        </li>
+                    </ul>
+                </form>
+                <div class="fnv_group">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
