@@ -217,7 +217,7 @@ $(function() {
                 }else if(slideIndex == 3) { //tenbyten
                     $('#record .inner').fadeOut();
                     $('#tenbyten .inner').delay(400).fadeIn(800);
-                    $('#beautylab .inner').fadeOut();
+                    $('#clova .inner').fadeOut();
                     $('.logo').animate({
                         color: "#333"
                     })
@@ -254,9 +254,9 @@ $(function() {
                     $('nav li').eq(1).addClass('on')
                     $('.menu li').removeClass('on')
                     $('.menu li').eq(2).addClass('on')
-                }else if(slideIndex == 4) { //beautylab
+                }else if(slideIndex == 4) { //clova
                     $('#tenbyten .inner').fadeOut();
-                    $('#beautylab .inner').delay(400).fadeIn(800);
+                    $('#clova .inner').delay(400).fadeIn(800);
                     $('#cuss .inner').fadeOut();
                     $('.logo').animate({
                         color: "#333"
@@ -295,7 +295,7 @@ $(function() {
                     $('.menu li').removeClass('on')
                     $('.menu li').eq(2).addClass('on')
                 }else if(slideIndex == 5) { //cuss
-                    $('#beautylab .inner').fadeOut();
+                    $('#clova .inner').fadeOut();
                     $('#cuss .inner').delay(400).fadeIn(800);
                     $('#design .inner').fadeOut();
                     $('.logo').animate({

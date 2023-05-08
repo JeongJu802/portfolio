@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+/*공통 (type01)*/
+.type01 .main_list li .desc_group .text {height: 150px;}
+
+/*header*/
+.sub_header {background: #fff; border-bottom: 1px solid #eee;}
+header .sub_logo a {background-position: -6px -64px;}
+/*gnb*/
+header .sub_gnb > .depth1 > li > a {color: rgba(0,0,0,0.6)}
+header .sub_gnb > .depth1 > li > a:hover {color: #000;}
+header .sub_nav_util > a {border: 1px solid rgba(0,0,0,0.5); color: rgba(0,0,0,0.6);}
+header .sub_nav_util > a:hover {background: #05d685; border-color: #05d685; color: #fff;}
+
+/*main_visual*/
+.sub_main {position: relative; height: 674px; background: url(../img/bg_solution.png) no-repeat center/cover;}
+.sub_main .main_text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
+.sub_main .main_text p {margin: 40px 0; font-size: 44px; color: #fff;}
+.sub_main .main_text .btn_query {display: inline-block; padding: 15px 40px; border: 1px solid rgba(255, 255, 255, 0.7); border-radius: 4px; color: rgba(255, 255, 255, 0.8); font-size: 18px;}
+
+/*product*/
+#product .text_group h2 {background-image: url(../img/products_text_img.png)}
+
+/*solution*/
+#solution {padding-top: 0;}
+#solution .text_group h2 {background-image: url(../img/solutions_text_img.png);}

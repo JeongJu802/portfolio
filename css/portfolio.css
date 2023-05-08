@@ -52,7 +52,7 @@ header .btnMenu a:nth-child(1) {display: none;}
 .menu ul li a:hover:after {width: 80%;}
 .menu ul li.on {color: #fff;}
 .menu ul li.on a:after {width: 80%;}
-.dimMenu {width: 100%; height: 100%; background: rgb(51, 51, 51, 0.7);}
+.dimMenu {width: 100%; height: 100%; background: rgb(34, 34, 34, 0.7);}
 
 /* intro */
 #intro .inner .pl {top: 100%;}
